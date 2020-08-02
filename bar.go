@@ -1,8 +1,10 @@
 package bar
+
 import (
 	"fmt"
 	"strings"
 )
+
 type progressBar struct {
 	current int //当前下载上传字节数
 	total int  //文件总大小
@@ -11,7 +13,7 @@ type progressBar struct {
 }
 func NewProgressBar(total int)*progressBar{
 	bar := &progressBar{total:total}
-	bar.unitFormat = "#"
+	bar.unitFormat = "▊"
 	return bar
 }
 func NewProgressBarFormat(total int,format string)*progressBar{

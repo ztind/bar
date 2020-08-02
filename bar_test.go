@@ -15,7 +15,7 @@ func TestPrint1(t *testing.T){
 
 
 func TestPrint2(t *testing.T){
-	bar := NewProgressBarFormat(150,">")
+	bar := NewProgressBarFormat(150,"#")
 	for i:=0;i<=150;i++{
 		time.Sleep(time.Millisecond*100)
 		bar.Print(i)
